@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Workout Recommendation</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Workout Recommendation</h1>
+        <form method="post">
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="body_part">Body Part:</label>
+                <input type="text" id="body_part" name="body_part" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="equipment">Equipment:</label>
+                <input type="text" id="equipment" name="equipment" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="level">Level:</label>
+                <input type="text" id="level" name="level" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Recommendation</button>
+        </form>
+    </div>
+</body>
+</html>
