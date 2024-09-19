@@ -2,12 +2,9 @@
 # Virtual environment
 .venv/
 
-# Jupyter Notebook checkpoints
+
+
 .ipynb_checkpoints/
-
-# Dataset files
-datasets/*.csv
-
 
 .vscode/
 
